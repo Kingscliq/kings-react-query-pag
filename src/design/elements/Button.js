@@ -7,8 +7,7 @@ import {
 } from "styled-system";
 
 const Button = styled.button`
-	/* padding: 10px 70px;
-	margin: 20px auto; */
+	
 	font-size: 1.2rem;
 	color: ${(props) => props.theme.colors.light};
 	border: 1px solid ${(props) => props.theme.colors.text};
@@ -17,6 +16,13 @@ const Button = styled.button`
     ${typography}
 	:active {
 		border-color: ${(props) => props.theme.colors.text};
+	}
+	:hover{
+		cursor: pointer
+	}
+	:disabled{
+		cursor: no-drop;
+		opacity: 0.5
 	}
 `;
 
